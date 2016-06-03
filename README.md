@@ -29,21 +29,24 @@ Because maintaining code requires maintainable code.
 
 ## Development
 
-Install all development dependencies via
+Install [Vagrant](https://www.vagrantup.com/) and start Development-VM
 
-    npm install
+	vagrant up
 
-Additionaly you need grunt, grunt-cli and bower as global packages installed.
+SSH into the VM and install all development and client dependencies
 
-Also install the client dependencies via
+	vagrant ssh
+	make install
 
-    bower install
+Just run this command to build the project
 
-There is a grunt task for building. Just run
+    make build
+    
+Run this command to test the source
 
-    grunt
+	make test   
 
-on the command line and everything should build fine.
+Point your browser to [bootstrap3-wysiwyg.dev](http://bootstrap3-wysiwyg.dev/).
 
 ## Installation
 
